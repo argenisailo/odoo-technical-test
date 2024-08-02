@@ -5,7 +5,7 @@
     'category': 'Test',
 
     'summary': 'Technical Test for Odoo Developer',
-    'description': 'Módulo creado para el Technical Test for Odoo Developer, parte del proceso de selección para el puesto de Desarrollador en Smart Bamboo',
+    'description': 'Módulo creado para el Technical Test for Odoo Developer para Odoo en su versión 15, parte del proceso de selección para el puesto de Desarrollador en Smart Bamboo',
     
     'author': "Argenis Isaí López Robles",
     'website': "https://github.com/argenisailo",
