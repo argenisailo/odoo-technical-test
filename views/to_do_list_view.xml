@@ -22,7 +22,7 @@
             <form string="To Do List">
                 <sheet>
                     <div class="oe_title">
-                        <label for="name" class="oe_edit_only" />
+                        <label for="title" class="oe_edit_only" />
                         <h1>
                             <field name="title" required="1"/>
                         </h1>
@@ -44,5 +44,5 @@
     </record>
 
     <!-- MENU BUTTON -->
-    <menuitem id="menu_visits_ecom" name="Visitas" action="action_to_do_list"/>
+    <menuitem id="menu_to_do_list" name="To-do List" action="action_to_do_list"/>
 </odoo>
