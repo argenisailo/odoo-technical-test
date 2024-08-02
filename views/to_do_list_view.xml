@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!-- TREE VIEW -->
+    <!-- TREE VIEWS -->
+    <!-- ORIGINAL TREE VIEW -->
     <record id="to_do_list_tree_view" model="ir.ui.view">
         <field name="name">to.do.list.tree.view</field>
         <field name="model">to.do.list</field>
@@ -11,6 +12,33 @@
                 <field name="description"/>
             </tree>
         
+        </field>
+    </record>
+
+    <!-- TREE VIEW VERSION 2 -->
+    <record id="to_do_list_tree_view_2" model="ir.ui.view">
+        <field name="name">to.do.list.tree.view.2</field>
+        <field name="model">to.do.list</field>
+        <field name="arch" type="xml">
+        
+            <tree string="To Do List (View 2)" editable="top">
+                <field name="title"/>
+                <field name="description"/>
+            </tree>
+        
+        </field>
+    </record>
+
+    <!-- SEARCH VIEW -->
+    <record id="to_do_list_search_view" model="ir.ui.view">
+        <field name="name">to_do_list_search_view</field>
+        <field name="model">to.do.list</field>
+        <field name="arch" type="xml">
+
+            <search>
+                <field name="title"/>
+            </search>
+
         </field>
     </record>
 
@@ -35,14 +63,25 @@
         </field>
     </record>
 
-    <!-- ACTION -->
+    <!-- ACTIONS -->
+    <!-- VIEW TYPE 1 -->
     <record id="action_to_do_list" model="ir.actions.act_window">
         <field name="name">To-do List</field>
-        <field name="model_id" ref="model_to_do_list"/>
+        <field name="res_model">to.do.list</field>
         <field name="view_mode">tree,form</field>
         <field name="view_id" ref="to_do_list_tree_view"/>
     </record>
 
-    <!-- MENU BUTTON -->
+    <!-- VIEW TYPE 2 -->
+    <record id="action_to_do_list_view_2" model="ir.actions.act_window">
+        <field name="name">To-do List (View 2)</field>
+        <field name="res_model">to.do.list</field>
+        <field name="view_mode">tree</field>
+        <field name="view_id" ref="to_do_list_tree_view_2"/>
+    </record>
+
+    <!-- BUTTONS -->
     <menuitem id="menu_to_do_list" name="To-do List" action="action_to_do_list"/>
+
+    <menuitem id="button_view_2" name="View 2" action="action_to_do_list_view_2" parent="menu_to_do_list" sequence="1"/>
 </odoo>
