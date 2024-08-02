@@ -46,4 +46,4 @@ Para eliminar una 'Task' (necesario el permiso de 'Administrator') se debe hacer
 ![alt text](guide_images/8.png)
 
 3. Dar click en el botón llamado 'Delete' para borrar el registro:
-![alt text](guide_images/8.png)
+![alt text](guide_images/9.png)
