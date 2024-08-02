@@ -3,17 +3,23 @@
     <!-- PERMISSION CATEGORY -->
     <record id="module_category_to_do_list" model="ir.module.category">
         <field name="name">To-do List</field>
-        <field name="sequence">10</field>
+        <field name="sequence">1</field>
+    </record>
+
+    <record id="module_category_to_do_list_perm" model="ir.module.category">
+        <field name="name">To-do List</field>
+        <field name="sequence">1</field>
+        <field name="parent_id" ref="module_category_to_do_list"/>
     </record>
 
     <!-- PERMISSION TYPES -->
     <record id="group_to_do_list_user" model="res.groups">
         <field name="name">User</field>
-        <field name="category_id" ref="module_category_to_do_list"/>
+        <field name="category_id" ref="module_category_to_do_list_perm"/>
     </record>
     <record id="group_to_do_list_admin" model="res.groups">
         <field name="name">Administrator</field>
-        <field name="category_id" ref="module_category_to_do_list" />
+        <field name="category_id" ref="module_category_to_do_list_perm" />
         <field name="implied_ids" eval="[(4, ref('group_to_do_list_user'))]"/>
     </record>
 </odoo>
