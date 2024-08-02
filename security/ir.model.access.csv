@@ -1,4 +1,6 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_to_do_list_user,access.to.do.list.user,model_to_do_list,group_to_do_list_user,1,1,1,0
+access_wizard_delete_task_user,access.wizard.delete.task.user,model_wizard_delete_task,group_to_do_list_user,1,0,0,1
 
 access_to_do_list_admin,access.to.do.list.admin,model_to_do_list,group_to_do_list_admin,1,1,1,1
+access_wizard_delete_task_admin,access.wizard.delete.task.admin,model_wizard_delete_task,group_to_do_list_admin,1,1,1,1

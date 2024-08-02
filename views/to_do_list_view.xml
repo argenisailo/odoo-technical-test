@@ -10,6 +10,7 @@
             <tree string="To Do List">
                 <field name="title"/>
                 <field name="description"/>
+                <button name="action_open_delete_wizard" type="object" string="Delete Task" class="btn btn-danger"/>
             </tree>
         
         </field>
@@ -24,6 +25,7 @@
             <tree string="To Do List (View 2)" editable="top">
                 <field name="title"/>
                 <field name="description"/>
+                <button name="action_open_delete_wizard" type="object" string="Delete Task" class="btn btn-danger"/>
             </tree>
         
         </field>
@@ -82,6 +84,5 @@
 
     <!-- BUTTONS -->
     <menuitem id="menu_to_do_list" name="To-do List" action="action_to_do_list"/>
-
     <menuitem id="button_view_2" name="View 2" action="action_to_do_list_view_2" parent="menu_to_do_list" sequence="1"/>
 </odoo>

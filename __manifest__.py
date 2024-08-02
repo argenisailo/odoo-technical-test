@@ -17,6 +17,7 @@
         'security/security.xml',
         'security/ir.model.access.csv',
         'views/to_do_list_view.xml',
+        'wizard/wizard_delete_task_view.xml',
     ],
 
     'installable': True,
