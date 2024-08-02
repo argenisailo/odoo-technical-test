@@ -50,3 +50,6 @@ Para eliminar una 'Task' (necesario el permiso de 'Administrator') se debe hacer
 
 4. El registro deja de existir:
 ![alt text](guide_images/10.png)
+
+# IMPORTANTE
+Los unit tests no fueron desarrollados por mí, pero son parte de las áreas que deseo aprender y desarrollar, el archivo incluído aquí es para aprendizaje mío
