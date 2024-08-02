@@ -7,20 +7,13 @@
     </record>
 
     <!-- PERMISSION TYPES -->
-    <record id="group_to_do_list_view_1" model="res.groups">
-        <field name="name">User: View 1</field>
+    <record id="group_to_do_list_user" model="res.groups">
+        <field name="name">User</field>
         <field name="category_id" ref="module_category_to_do_list"/>
-    </record>
-    <record id="group_to_do_list_view_2" model="res.groups">
-        <field name="name">User: View 2</field>
-        <field name="category_id" ref="module_category_to_do_list" />
     </record>
     <record id="group_to_do_list_admin" model="res.groups">
         <field name="name">Administrator</field>
         <field name="category_id" ref="module_category_to_do_list" />
-        <field name="implied_ids" eval="[
-                (4, ref('group_to_do_list_view_1')),
-                (4, ref('group_to_do_list_view_2'))
-        ]"/>
+        <field name="implied_ids" eval="[(4, ref('group_to_do_list_user'))]"/>
     </record>
 </odoo>
